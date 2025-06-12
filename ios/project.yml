@@ -1,0 +1,32 @@
+name: Tymely
+options:
+  bundleIdPrefix: co.tymely
+targets:
+  Tymely:
+    type: application
+    platform: iOS
+    deploymentTarget: "15.0"
+    sources:
+      - path: .
+        excludes:
+          - "*.xcodeproj"
+          - "*.xcworkspace"
+          - "TymelyTests/**"
+          - "TymelyUITests/**"
+    resources:
+      - Resources/**
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: co.tymely.Tymely
+        DEVELOPMENT_TEAM: WR5SQ3MV4C
+        INFOPLIST_FILE: Info.plist
+        TARGETED_DEVICE_FAMILY: 1,2
+        SWIFT_VERSION: 5.0
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    entitlements:
+      path: Tymely.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.tymely.app
+    coreDataModels:
+      - Models/Tymely.xcdatamodeld 

@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12EBC35ED980A54BC4983F66 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBCB3BE8950CF864646A25D /* TabBarView.swift */; };
+		2F551B76D13045DFB4A83C87 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01B078C72629765744E8CE9 /* NavigationBarView.swift */; };
+		4682CD12DD85FB028ED9C1E5 /* project.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2F792C127F9B793D1828530C /* project.yml */; };
+		5ADBE72A6E20B83787A2886E /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D859210BC3B059BA2586AB /* AppColors.swift */; };
+		608BFF6529B6A6910E464B17 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D40998336FE9BE7320C6257 /* SampleData.swift */; };
+		61453A4D419ECA07BF45AA55 /* DailyRoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF3D3A109F4B5E18E1AD3A6 /* DailyRoutineView.swift */; };
+		927E284118C972B03D397784 /* RoutineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A53A22BBA949237386D254 /* RoutineItem.swift */; };
+		92EA9959EEE4A1F2A99D023D /* RoutineItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9BA573A4F8F630D3C4BDE0 /* RoutineItemRowView.swift */; };
+		C21968DC85BE4611E7422150 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1255C79FC24880E89E47B6 /* ContentView.swift */; };
+		E05EBC449C7F0FB6906BB337 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C379E798FD15566C192DFB60 /* Persistence.swift */; };
+		E38C53BDDB9BF0C2552D47E4 /* TymelyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEBDF30B1F4CBC578114E3E /* TymelyApp.swift */; };
+		EC0C54D94AF57637198F4709 /* Tymely.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F058495E519374B72D5160F7 /* Tymely.xcdatamodeld */; };
+		EF86DCB747B70A826FC59A9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08FF5E4C7D2FA77E4BDB2B92 /* Assets.xcassets */; };
+		F8593C18BEDB9BB853497752 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96056033CCE5FC6FA0F00845 /* DashboardView.swift */; };
+		F85F727A875C0BDB18FBE928 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413D074E8408FA434BE04A6 /* ProfileView.swift */; };
+		F9FC6FF0D9C40CFAF0E551C1 /* ContextualRoutineItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF86C35987F5FDC842B48B8D /* ContextualRoutineItemRowView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08FF5E4C7D2FA77E4BDB2B92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16A53A22BBA949237386D254 /* RoutineItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineItem.swift; sourceTree = "<group>"; };
+		2BF3D3A109F4B5E18E1AD3A6 /* DailyRoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRoutineView.swift; sourceTree = "<group>"; };
+		2F792C127F9B793D1828530C /* project.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = project.yml; sourceTree = "<group>"; };
+		3AEBDF30B1F4CBC578114E3E /* TymelyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TymelyApp.swift; sourceTree = "<group>"; };
+		4C8D9C54DDCC7E4B6D0F6E7D /* Tymely.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tymely.xcdatamodel; sourceTree = "<group>"; };
+		7D40998336FE9BE7320C6257 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		7D77E5DA4B23983145CBE7F8 /* Tymely.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tymely.entitlements; sourceTree = "<group>"; };
+		7F1255C79FC24880E89E47B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8413D074E8408FA434BE04A6 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		96056033CCE5FC6FA0F00845 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		ADBCB3BE8950CF864646A25D /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		B59240B1180D97E9E65C8367 /* Tymely.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Tymely.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF86C35987F5FDC842B48B8D /* ContextualRoutineItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextualRoutineItemRowView.swift; sourceTree = "<group>"; };
+		BF9BA573A4F8F630D3C4BDE0 /* RoutineItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineItemRowView.swift; sourceTree = "<group>"; };
+		C379E798FD15566C192DFB60 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		D01B078C72629765744E8CE9 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		D371A6AD8CA90BDCB1ABE783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F4D859210BC3B059BA2586AB /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		04EEB1EA656C1AAD17F0AEDE /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				F4D859210BC3B059BA2586AB /* AppColors.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		19D29085636EA4A9E92F1E49 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				08FF5E4C7D2FA77E4BDB2B92 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		249C1865365C2DAFEA67F560 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				C379E798FD15566C192DFB60 /* Persistence.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		3BBFA035F5E564FA72E5433B = {
+			isa = PBXGroup;
+			children = (
+				8E953CA377457A94AC9E04BD /* ios */,
+				9D751848428AC71D045D49C8 /* Models */,
+				19D29085636EA4A9E92F1E49 /* Resources */,
+				249C1865365C2DAFEA67F560 /* Storage */,
+				04EEB1EA656C1AAD17F0AEDE /* Theme */,
+				E5C1F210C34A81D8B8B26ACE /* Views */,
+				4ED81B013B53EF35B4A8FB19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4ED81B013B53EF35B4A8FB19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B59240B1180D97E9E65C8367 /* Tymely.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A004D45DD84084D24413DA5 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				BF86C35987F5FDC842B48B8D /* ContextualRoutineItemRowView.swift */,
+				2BF3D3A109F4B5E18E1AD3A6 /* DailyRoutineView.swift */,
+				D01B078C72629765744E8CE9 /* NavigationBarView.swift */,
+				BF9BA573A4F8F630D3C4BDE0 /* RoutineItemRowView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		8E953CA377457A94AC9E04BD /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				D371A6AD8CA90BDCB1ABE783 /* Info.plist */,
+				2F792C127F9B793D1828530C /* project.yml */,
+				7D77E5DA4B23983145CBE7F8 /* Tymely.entitlements */,
+				3AEBDF30B1F4CBC578114E3E /* TymelyApp.swift */,
+				9D751848428AC71D045D49C8 /* Models */,
+				19D29085636EA4A9E92F1E49 /* Resources */,
+				249C1865365C2DAFEA67F560 /* Storage */,
+				04EEB1EA656C1AAD17F0AEDE /* Theme */,
+				E5C1F210C34A81D8B8B26ACE /* Views */,
+			);
+			name = ios;
+			path = .;
+			sourceTree = "<group>";
+		};
+		9D751848428AC71D045D49C8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				16A53A22BBA949237386D254 /* RoutineItem.swift */,
+				7D40998336FE9BE7320C6257 /* SampleData.swift */,
+				F058495E519374B72D5160F7 /* Tymely.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E5C1F210C34A81D8B8B26ACE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7F1255C79FC24880E89E47B6 /* ContentView.swift */,
+				96056033CCE5FC6FA0F00845 /* DashboardView.swift */,
+				8413D074E8408FA434BE04A6 /* ProfileView.swift */,
+				ADBCB3BE8950CF864646A25D /* TabBarView.swift */,
+				5A004D45DD84084D24413DA5 /* Dashboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		569E8F9DB695209E845353A8 /* Tymely */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A12C9794C8CEB9427AF2CD62 /* Build configuration list for PBXNativeTarget "Tymely" */;
+			buildPhases = (
+				DB66569CEC1CECCD29370511 /* Sources */,
+				E8C71F026872910252152B08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tymely;
+			packageProductDependencies = (
+			);
+			productName = Tymely;
+			productReference = B59240B1180D97E9E65C8367 /* Tymely.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1043C3CA17ECCEA756F01984 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					569E8F9DB695209E845353A8 = {
+						DevelopmentTeam = WR5SQ3MV4C;
+					};
+				};
+			};
+			buildConfigurationList = 713E494BD097961650762E1E /* Build configuration list for PBXProject "Tymely" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 3BBFA035F5E564FA72E5433B;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 54;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				569E8F9DB695209E845353A8 /* Tymely */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8C71F026872910252152B08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF86DCB747B70A826FC59A9E /* Assets.xcassets in Resources */,
+				4682CD12DD85FB028ED9C1E5 /* project.yml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB66569CEC1CECCD29370511 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ADBE72A6E20B83787A2886E /* AppColors.swift in Sources */,
+				C21968DC85BE4611E7422150 /* ContentView.swift in Sources */,
+				F9FC6FF0D9C40CFAF0E551C1 /* ContextualRoutineItemRowView.swift in Sources */,
+				61453A4D419ECA07BF45AA55 /* DailyRoutineView.swift in Sources */,
+				F8593C18BEDB9BB853497752 /* DashboardView.swift in Sources */,
+				2F551B76D13045DFB4A83C87 /* NavigationBarView.swift in Sources */,
+				E05EBC449C7F0FB6906BB337 /* Persistence.swift in Sources */,
+				F85F727A875C0BDB18FBE928 /* ProfileView.swift in Sources */,
+				927E284118C972B03D397784 /* RoutineItem.swift in Sources */,
+				92EA9959EEE4A1F2A99D023D /* RoutineItemRowView.swift in Sources */,
+				608BFF6529B6A6910E464B17 /* SampleData.swift in Sources */,
+				12EBC35ED980A54BC4983F66 /* TabBarView.swift in Sources */,
+				EC0C54D94AF57637198F4709 /* Tymely.xcdatamodeld in Sources */,
+				E38C53BDDB9BF0C2552D47E4 /* TymelyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		073181DA8A82831CD5C4E1EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Tymely.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = WR5SQ3MV4C;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.tymely.Tymely;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0BFFB2E4C99D93CCD3A4C958 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		43420975EAACF93544D30EEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Tymely.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = WR5SQ3MV4C;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.tymely.Tymely;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3E7B340BF0E2D3EFBFA3F2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		713E494BD097961650762E1E /* Build configuration list for PBXProject "Tymely" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E7B340BF0E2D3EFBFA3F2F /* Debug */,
+				0BFFB2E4C99D93CCD3A4C958 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A12C9794C8CEB9427AF2CD62 /* Build configuration list for PBXNativeTarget "Tymely" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43420975EAACF93544D30EEE /* Debug */,
+				073181DA8A82831CD5C4E1EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F058495E519374B72D5160F7 /* Tymely.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4C8D9C54DDCC7E4B6D0F6E7D /* Tymely.xcdatamodel */,
+			);
+			currentVersion = 4C8D9C54DDCC7E4B6D0F6E7D /* Tymely.xcdatamodel */;
+			path = Tymely.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1043C3CA17ECCEA756F01984 /* Project object */;
+}
