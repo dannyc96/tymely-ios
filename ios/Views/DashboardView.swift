@@ -137,7 +137,7 @@ struct DashboardView: View {
                         .padding(.trailing, 20)
                     }
                 }
-                .padding(.bottom, 120) // Above tab bar
+                .padding(.bottom, 30) // Moved down from 120 to 30 - closer to bottom
                 .transition(.scale.combined(with: .opacity))
                 .zIndex(1000) // Ensure it's on top of everything
             }
