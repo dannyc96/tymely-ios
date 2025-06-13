@@ -127,94 +127,91 @@ struct TymelyWidgetEntryView : View {
     }
 
     var body: some View {
-        ZStack {
-            // Background gradient
+        VStack(spacing: 0) {
+            // Header with time and status
+            HStack {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(entry.routineItem.time)
+                        .font(.system(size: 18, weight: .bold, design: .rounded))
+                        .foregroundColor(.white)
+                    
+                    Text(timeUntilNext)
+                        .font(.system(size: 12, weight: .medium))
+                        .foregroundColor(Color(red: 1.0, green: 0.6, blue: 0.2))
+                }
+                
+                Spacer()
+                
+                if let tag = entry.routineItem.tag {
+                    Text(tag)
+                        .font(.system(size: 10, weight: .bold))
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 4)
+                        .background(entry.routineItem.tagColor.opacity(0.3))
+                        .foregroundColor(entry.routineItem.tagColor)
+                        .cornerRadius(8)
+                }
+            }
+            .padding(.horizontal, 16)
+            .padding(.top, 12)
+            
+            // Main content
+            HStack(alignment: .top, spacing: 12) {
+                // Icon
+                Image(systemName: entry.routineItem.iconName)
+                    .font(.system(size: 24, weight: .medium))
+                    .foregroundColor(.white)
+                    .frame(width: 32, height: 32)
+                
+                // Title and details
+                VStack(alignment: .leading, spacing: 6) {
+                    Text(entry.routineItem.title)
+                        .font(.system(size: 16, weight: .semibold))
+                        .foregroundColor(.white)
+                        .lineLimit(2)
+                    
+                    if !entry.routineItem.details.isEmpty {
+                        Text(entry.routineItem.details.first ?? "")
+                            .font(.system(size: 12))
+                            .foregroundColor(Color(red: 0.7, green: 0.7, blue: 0.7))
+                            .lineLimit(2)
+                    }
+                }
+                
+                Spacer()
+            }
+            .padding(.horizontal, 16)
+            .padding(.bottom, 12)
+            
+            Spacer()
+            
+            // Bottom accent line
+            Rectangle()
+                .fill(
+                    LinearGradient(
+                        gradient: Gradient(colors: [
+                            Color(red: 1.0, green: 0.8, blue: 0.0),   // Yellow
+                            Color(red: 1.0, green: 0.6, blue: 0.2),   // Orange
+                            Color(red: 1.0, green: 0.4, blue: 0.6),   // Pink
+                            Color(red: 0.2, green: 0.6, blue: 1.0),   // Blue
+                            Color(red: 0.6, green: 0.4, blue: 1.0)    // Purple
+                        ]),
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+                .frame(height: 3)
+        }
+        .containerBackground(for: .widget) {
             LinearGradient(
                 gradient: Gradient(colors: [
-                    Color.black,
-                    Color.black.opacity(0.9)
+                    Color(red: 0.05, green: 0.05, blue: 0.05), // Very dark gray
+                    Color(red: 0.02, green: 0.02, blue: 0.02)  // Almost black
                 ]),
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )
-            
-            VStack(spacing: 0) {
-                // Header with time and status
-                HStack {
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text(entry.routineItem.time)
-                            .font(.system(size: 18, weight: .bold, design: .rounded))
-                            .foregroundColor(.white)
-                        
-                        Text(timeUntilNext)
-                            .font(.system(size: 12, weight: .medium))
-                            .foregroundColor(.orange)
-                    }
-                    
-                    Spacer()
-                    
-                    if let tag = entry.routineItem.tag {
-                        Text(tag)
-                            .font(.system(size: 10, weight: .bold))
-                            .padding(.horizontal, 8)
-                            .padding(.vertical, 4)
-                            .background(entry.routineItem.tagColor.opacity(0.3))
-                            .foregroundColor(entry.routineItem.tagColor)
-                            .cornerRadius(8)
-                    }
-                }
-                .padding(.horizontal, 16)
-                .padding(.top, 12)
-                
-                // Main content
-                HStack(alignment: .top, spacing: 12) {
-                    // Icon
-                    Image(systemName: entry.routineItem.iconName)
-                        .font(.system(size: 24, weight: .medium))
-                        .foregroundColor(.white)
-                        .frame(width: 32, height: 32)
-                    
-                    // Title and details
-                    VStack(alignment: .leading, spacing: 6) {
-                        Text(entry.routineItem.title)
-                            .font(.system(size: 16, weight: .semibold))
-                            .foregroundColor(.white)
-                            .lineLimit(2)
-                        
-                        if !entry.routineItem.details.isEmpty {
-                            Text(entry.routineItem.details.first ?? "")
-                                .font(.system(size: 12))
-                                .foregroundColor(.gray)
-                                .lineLimit(2)
-                        }
-                    }
-                    
-                    Spacer()
-                }
-                .padding(.horizontal, 16)
-                .padding(.bottom, 12)
-                
-                Spacer()
-                
-                // Bottom accent line
-                Rectangle()
-                    .fill(
-                        LinearGradient(
-                            gradient: Gradient(colors: [
-                                Color.yellow,
-                                Color.orange,
-                                Color.pink,
-                                Color.blue,
-                                Color.purple
-                            ]),
-                            startPoint: .leading,
-                            endPoint: .trailing
-                        )
-                    )
-                    .frame(height: 3)
-            }
         }
-        .clipShape(RoundedRectangle(cornerRadius: 16))
     }
 }
 
@@ -224,7 +221,6 @@ struct TymelyWidget: Widget {
     var body: some WidgetConfiguration {
         AppIntentConfiguration(kind: kind, intent: ConfigurationAppIntent.self, provider: Provider()) { entry in
             TymelyWidgetEntryView(entry: entry)
-                .containerBackground(.fill.tertiary, for: .widget)
         }
         .configurationDisplayName("Current Activity")
         .description("Shows your current routine activity.")
