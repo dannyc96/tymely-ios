@@ -16,7 +16,7 @@ struct ContextualRoutineItemRowView: View {
                                         of: now)
         
         if let todayItemTime = todayItemTime {
-            return todayItemTime <= now && !item.isCompleted
+            return todayItemTime <= now
         }
         return false
     }
