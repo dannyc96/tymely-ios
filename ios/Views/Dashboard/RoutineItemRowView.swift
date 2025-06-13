@@ -58,12 +58,6 @@ struct RoutineItemRowView: View {
                 .cornerRadius(20, corners: [.bottomLeft, .bottomRight])
             }
             .shadow(color: Color.accent.opacity(0.3), radius: 8, x: 0, y: 4)
-
-            // Completion Checkmark Overlay
-            Image(systemName: item.isCompleted ? "checkmark.circle.fill" : (item.isCurrent ? "largecircle.fill.circle" : "circle"))
-                .font(.title2)
-                .foregroundColor(item.isCompleted ? .green : (item.isCurrent ? .blue : .gray.opacity(0.3)))
-                .padding(12)
         }
     }
 }
