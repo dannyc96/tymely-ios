@@ -11,41 +11,6 @@ struct ProfileView: View {
     var body: some View {
         NavigationView {
             List {
-                // Profile Header Section
-                Section {
-                    HStack {
-                        // Profile Image
-                        ZStack {
-                            Circle()
-                                .fill(LinearGradient(
-                                    gradient: Gradient(colors: [Color.blue, Color.purple]),
-                                    startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
-                                ))
-                                .frame(width: 80, height: 80)
-                            
-                            Image(systemName: "person.fill")
-                                .font(.system(size: 40))
-                                .foregroundColor(.white)
-                        }
-                        
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text("Your Profile")
-                                .font(.title2)
-                                .fontWeight(.bold)
-                            
-                            Text("Manage your daily routine settings")
-                                .font(.subheadline)
-                                .foregroundColor(.secondary)
-                        }
-                        
-                        Spacer()
-                    }
-                    .padding(.vertical, 12)
-                }
-                .listRowBackground(Color.clear)
-                .listRowInsets(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
-                
                 // Sleep Schedule Section
                 Section {
                     // Wake Up Time
@@ -219,7 +184,7 @@ struct ProfileView: View {
                     Text("About")
                 }
             }
-            .navigationTitle("Profile")
+            .navigationTitle("")
             .navigationBarTitleDisplayMode(.large)
             .onAppear {
                 checkNotificationPermissionStatus()
