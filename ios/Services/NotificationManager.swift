@@ -126,6 +126,44 @@ class NotificationManager: ObservableObject {
     
     // MARK: - Utility Methods
     
+    func sendTestNotification() {
+        // First check if we have permission
+        UNUserNotificationCenter.current().getNotificationSettings { settings in
+            DispatchQueue.main.async {
+                print("🔍 Notification authorization status: \(settings.authorizationStatus.rawValue)")
+                print("🔍 Alert setting: \(settings.alertSetting.rawValue)")
+                print("🔍 Sound setting: \(settings.soundSetting.rawValue)")
+                
+                if settings.authorizationStatus == .authorized || settings.authorizationStatus == .provisional {
+                    self.scheduleTestNotification()
+                } else {
+                    print("❌ Notifications not authorized. Status: \(settings.authorizationStatus)")
+                }
+            }
+        }
+    }
+    
+    private func scheduleTestNotification() {
+        let content = UNMutableNotificationContent()
+        content.title = "🧪 Test Notification"
+        content.body = "This is a test notification from Tymely! Notifications are working correctly."
+        content.sound = .default
+        content.badge = 1
+        
+        // Trigger the notification in 5 seconds to give more time
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let request = UNNotificationRequest(identifier: "test-notification-\(Date().timeIntervalSince1970)", content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request) { error in
+            if let error = error {
+                print("❌ Error sending test notification: \(error.localizedDescription)")
+            } else {
+                print("✅ Test notification scheduled for 5 seconds from now")
+                print("💡 Make sure to put the app in the background or lock your device to see the notification!")
+            }
+        }
+    }
+    
     func cancelAllNotifications() {
         UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
         print("🗑️ Cancelled all pending notifications")

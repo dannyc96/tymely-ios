@@ -7,83 +7,114 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12EBC35ED980A54BC4983F66 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBCB3BE8950CF864646A25D /* TabBarView.swift */; };
-		2F551B76D13045DFB4A83C87 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01B078C72629765744E8CE9 /* NavigationBarView.swift */; };
-		4682CD12DD85FB028ED9C1E5 /* project.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2F792C127F9B793D1828530C /* project.yml */; };
-		5ADBE72A6E20B83787A2886E /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D859210BC3B059BA2586AB /* AppColors.swift */; };
-		608BFF6529B6A6910E464B17 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D40998336FE9BE7320C6257 /* SampleData.swift */; };
-		61453A4D419ECA07BF45AA55 /* DailyRoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF3D3A109F4B5E18E1AD3A6 /* DailyRoutineView.swift */; };
-		623ED32563855CDBE39D17DA /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5124D3068193A0909C727B94 /* NotificationManager.swift */; };
-		927E284118C972B03D397784 /* RoutineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A53A22BBA949237386D254 /* RoutineItem.swift */; };
-		92EA9959EEE4A1F2A99D023D /* RoutineItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9BA573A4F8F630D3C4BDE0 /* RoutineItemRowView.swift */; };
-		C21968DC85BE4611E7422150 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1255C79FC24880E89E47B6 /* ContentView.swift */; };
-		E05EBC449C7F0FB6906BB337 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C379E798FD15566C192DFB60 /* Persistence.swift */; };
-		E38C53BDDB9BF0C2552D47E4 /* TymelyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEBDF30B1F4CBC578114E3E /* TymelyApp.swift */; };
-		EC0C54D94AF57637198F4709 /* Tymely.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F058495E519374B72D5160F7 /* Tymely.xcdatamodeld */; };
-		EF86DCB747B70A826FC59A9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08FF5E4C7D2FA77E4BDB2B92 /* Assets.xcassets */; };
-		F8593C18BEDB9BB853497752 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96056033CCE5FC6FA0F00845 /* DashboardView.swift */; };
-		F85F727A875C0BDB18FBE928 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413D074E8408FA434BE04A6 /* ProfileView.swift */; };
-		F9FC6FF0D9C40CFAF0E551C1 /* ContextualRoutineItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF86C35987F5FDC842B48B8D /* ContextualRoutineItemRowView.swift */; };
+		01CCCE4745A4A0AB38BBE778 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE039009AF240F6CAB32302C /* AppColors.swift */; };
+		0A8EDEB66763654B5C935451 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7841483C2BB858ED339662B6 /* TabBarView.swift */; };
+		20024105E1C3675F1C6864CD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA1FBA450B71CB4699A44D /* ProfileView.swift */; };
+		359B678088FF8717838F4569 /* TymelyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2357CE62A01DDF63D7A39208 /* TymelyWidget.swift */; };
+		59E01F9CB1B4EEA45913AD0A /* TymelyWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC363DA652ECB90D4C0F89 /* TymelyWidgetBundle.swift */; };
+		5E5F79D46498101CF652E127 /* ContextualRoutineItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F2C08382389522CB9823AB /* ContextualRoutineItemRowView.swift */; };
+		6535DD67E698712FD248C052 /* WidgetModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB8DD7E581401C75074DDB6 /* WidgetModels.swift */; };
+		69B2D120C6780EAFEB12B5C0 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032F29C2B16CC44A2DFC167D /* Persistence.swift */; };
+		74900C0357014D63736D8902 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8AC1F57780CE848732A0F0 /* NavigationBarView.swift */; };
+		7C7C3E87958889465B29C8B4 /* DailyRoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0045ED03ACD85181FFA5F /* DailyRoutineView.swift */; };
+		7D4D50578DE0B036523E8F6B /* Tymely.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D0B92191B0DE09B665481 /* Tymely.xcdatamodeld */; };
+		7E714F1B1CBDADBDEC71FBC9 /* TymelyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0258299A35A6ACA30B0CAB37 /* TymelyApp.swift */; };
+		84E6C07914F259426A91BFD0 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB11317E37597138B1EC98F2 /* AppIntent.swift */; };
+		87625D430101D5EEA8B88E33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085F03E68B620A18C7EA577A /* ContentView.swift */; };
+		8BBE4DA915271E67F54DA569 /* RoutineItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187149D2A7A489297D3313FC /* RoutineItemRowView.swift */; };
+		8C87E49330849C2533C9D14A /* TymelyWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491C80B7C7692AEDD2E8F571 /* TymelyWidgetLiveActivity.swift */; };
+		9F46B6A3FC4981B493F31905 /* RoutineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E0B7994E0CC3BDE4351586 /* RoutineItem.swift */; };
+		BEB7502878242704D31724D7 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E11950FFFCB34B91700BDD9 /* NotificationManager.swift */; };
+		C828C3D85DF439940BF0FEDD /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A793A5327B4639E796D811B /* SampleData.swift */; };
+		D81CA6939FBCCFE8D1B6995E /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7396BC20156075B99E77E47A /* DashboardView.swift */; };
+		F1C1CC81544503A2AD81D946 /* TymelyWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 397C85C6446C5B9623A207FC /* TymelyWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F8B88E986251FAC84CF63ABD /* TymelyWidgetControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012775F1A832B49F6E04E42D /* TymelyWidgetControl.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5B8E5EF017E0A16A9A8D9AC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1043C3CA17ECCEA756F01984 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 723281AD0CB737837555B504;
+			remoteInfo = TymelyWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		68B369F262C29828F1CC180B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F1C1CC81544503A2AD81D946 /* TymelyWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		08FF5E4C7D2FA77E4BDB2B92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		16A53A22BBA949237386D254 /* RoutineItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineItem.swift; sourceTree = "<group>"; };
-		2BF3D3A109F4B5E18E1AD3A6 /* DailyRoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRoutineView.swift; sourceTree = "<group>"; };
-		2F792C127F9B793D1828530C /* project.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = project.yml; sourceTree = "<group>"; };
-		3AEBDF30B1F4CBC578114E3E /* TymelyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TymelyApp.swift; sourceTree = "<group>"; };
-		4C8D9C54DDCC7E4B6D0F6E7D /* Tymely.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tymely.xcdatamodel; sourceTree = "<group>"; };
-		5124D3068193A0909C727B94 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
-		7D40998336FE9BE7320C6257 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
-		7D77E5DA4B23983145CBE7F8 /* Tymely.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tymely.entitlements; sourceTree = "<group>"; };
-		7F1255C79FC24880E89E47B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		8413D074E8408FA434BE04A6 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		96056033CCE5FC6FA0F00845 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
-		ADBCB3BE8950CF864646A25D /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		012775F1A832B49F6E04E42D /* TymelyWidgetControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TymelyWidgetControl.swift; sourceTree = "<group>"; };
+		0258299A35A6ACA30B0CAB37 /* TymelyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TymelyApp.swift; sourceTree = "<group>"; };
+		032F29C2B16CC44A2DFC167D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		085F03E68B620A18C7EA577A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0A793A5327B4639E796D811B /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		187149D2A7A489297D3313FC /* RoutineItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineItemRowView.swift; sourceTree = "<group>"; };
+		2357CE62A01DDF63D7A39208 /* TymelyWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TymelyWidget.swift; sourceTree = "<group>"; };
+		397C85C6446C5B9623A207FC /* TymelyWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = TymelyWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EB8DD7E581401C75074DDB6 /* WidgetModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetModels.swift; sourceTree = "<group>"; };
+		491C80B7C7692AEDD2E8F571 /* TymelyWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TymelyWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		5E11950FFFCB34B91700BDD9 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		6F8AC1F57780CE848732A0F0 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		7396BC20156075B99E77E47A /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		7841483C2BB858ED339662B6 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		78E0B7994E0CC3BDE4351586 /* RoutineItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineItem.swift; sourceTree = "<group>"; };
+		94272016A11A63020B1492EC /* Tymely.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tymely.xcdatamodel; sourceTree = "<group>"; };
+		96A0C3FDC7AF2E0835547286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B59240B1180D97E9E65C8367 /* Tymely.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Tymely.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF86C35987F5FDC842B48B8D /* ContextualRoutineItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextualRoutineItemRowView.swift; sourceTree = "<group>"; };
-		BF9BA573A4F8F630D3C4BDE0 /* RoutineItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineItemRowView.swift; sourceTree = "<group>"; };
-		C379E798FD15566C192DFB60 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		D01B078C72629765744E8CE9 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
-		D371A6AD8CA90BDCB1ABE783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		F4D859210BC3B059BA2586AB /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		CFD0045ED03ACD85181FFA5F /* DailyRoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRoutineView.swift; sourceTree = "<group>"; };
+		D1F2C08382389522CB9823AB /* ContextualRoutineItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextualRoutineItemRowView.swift; sourceTree = "<group>"; };
+		DB11317E37597138B1EC98F2 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		EE039009AF240F6CAB32302C /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		FACC363DA652ECB90D4C0F89 /* TymelyWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TymelyWidgetBundle.swift; sourceTree = "<group>"; };
+		FADA1FBA450B71CB4699A44D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		04EEB1EA656C1AAD17F0AEDE /* Theme */ = {
+		0158AE2568A813B6303F46F5 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
-				F4D859210BC3B059BA2586AB /* AppColors.swift */,
+				EE039009AF240F6CAB32302C /* AppColors.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
 		};
-		19D29085636EA4A9E92F1E49 /* Resources */ = {
+		24B0E8B37853637590D10138 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				08FF5E4C7D2FA77E4BDB2B92 /* Assets.xcassets */,
+				D1F2C08382389522CB9823AB /* ContextualRoutineItemRowView.swift */,
+				CFD0045ED03ACD85181FFA5F /* DailyRoutineView.swift */,
+				6F8AC1F57780CE848732A0F0 /* NavigationBarView.swift */,
+				187149D2A7A489297D3313FC /* RoutineItemRowView.swift */,
 			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		249C1865365C2DAFEA67F560 /* Storage */ = {
-			isa = PBXGroup;
-			children = (
-				C379E798FD15566C192DFB60 /* Persistence.swift */,
-			);
-			path = Storage;
+			path = Dashboard;
 			sourceTree = "<group>";
 		};
 		3BBFA035F5E564FA72E5433B = {
 			isa = PBXGroup;
 			children = (
-				8E953CA377457A94AC9E04BD /* ios */,
-				9D751848428AC71D045D49C8 /* Models */,
-				19D29085636EA4A9E92F1E49 /* Resources */,
-				C0A3146126C3BD5B1263CAA8 /* Services */,
-				249C1865365C2DAFEA67F560 /* Storage */,
-				04EEB1EA656C1AAD17F0AEDE /* Theme */,
-				E5C1F210C34A81D8B8B26ACE /* Views */,
+				0258299A35A6ACA30B0CAB37 /* TymelyApp.swift */,
+				66A246B7A25CC5BEDD6F9755 /* Components */,
+				B9A1160FFA41015E9B49314B /* Models */,
+				72C698DCFD58C15898B6250A /* Services */,
+				CEAE70F75351ABDFBBD01D69 /* Shared */,
+				732F4E09A4A4353AB68FC910 /* Storage */,
+				0158AE2568A813B6303F46F5 /* Theme */,
+				CE27E31CA53C3DC793F018A9 /* TymelyWidget */,
+				CFE1F51652B236E4B783DC58 /* Utils */,
+				7855B2981AED7E7B8A9F1429 /* Views */,
 				4ED81B013B53EF35B4A8FB19 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,67 +123,82 @@
 			isa = PBXGroup;
 			children = (
 				B59240B1180D97E9E65C8367 /* Tymely.app */,
+				397C85C6446C5B9623A207FC /* TymelyWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5A004D45DD84084D24413DA5 /* Dashboard */ = {
+		66A246B7A25CC5BEDD6F9755 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				BF86C35987F5FDC842B48B8D /* ContextualRoutineItemRowView.swift */,
-				2BF3D3A109F4B5E18E1AD3A6 /* DailyRoutineView.swift */,
-				D01B078C72629765744E8CE9 /* NavigationBarView.swift */,
-				BF9BA573A4F8F630D3C4BDE0 /* RoutineItemRowView.swift */,
 			);
-			path = Dashboard;
+			path = Components;
 			sourceTree = "<group>";
 		};
-		8E953CA377457A94AC9E04BD /* ios */ = {
+		72C698DCFD58C15898B6250A /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				D371A6AD8CA90BDCB1ABE783 /* Info.plist */,
-				2F792C127F9B793D1828530C /* project.yml */,
-				7D77E5DA4B23983145CBE7F8 /* Tymely.entitlements */,
-				3AEBDF30B1F4CBC578114E3E /* TymelyApp.swift */,
-				9D751848428AC71D045D49C8 /* Models */,
-				19D29085636EA4A9E92F1E49 /* Resources */,
-				C0A3146126C3BD5B1263CAA8 /* Services */,
-				249C1865365C2DAFEA67F560 /* Storage */,
-				04EEB1EA656C1AAD17F0AEDE /* Theme */,
-				E5C1F210C34A81D8B8B26ACE /* Views */,
-			);
-			name = ios;
-			path = .;
-			sourceTree = "<group>";
-		};
-		9D751848428AC71D045D49C8 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				16A53A22BBA949237386D254 /* RoutineItem.swift */,
-				7D40998336FE9BE7320C6257 /* SampleData.swift */,
-				F058495E519374B72D5160F7 /* Tymely.xcdatamodeld */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		C0A3146126C3BD5B1263CAA8 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				5124D3068193A0909C727B94 /* NotificationManager.swift */,
+				5E11950FFFCB34B91700BDD9 /* NotificationManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		E5C1F210C34A81D8B8B26ACE /* Views */ = {
+		732F4E09A4A4353AB68FC910 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
-				7F1255C79FC24880E89E47B6 /* ContentView.swift */,
-				96056033CCE5FC6FA0F00845 /* DashboardView.swift */,
-				8413D074E8408FA434BE04A6 /* ProfileView.swift */,
-				ADBCB3BE8950CF864646A25D /* TabBarView.swift */,
-				5A004D45DD84084D24413DA5 /* Dashboard */,
+				032F29C2B16CC44A2DFC167D /* Persistence.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		7855B2981AED7E7B8A9F1429 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				085F03E68B620A18C7EA577A /* ContentView.swift */,
+				7396BC20156075B99E77E47A /* DashboardView.swift */,
+				FADA1FBA450B71CB4699A44D /* ProfileView.swift */,
+				7841483C2BB858ED339662B6 /* TabBarView.swift */,
+				24B0E8B37853637590D10138 /* Dashboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B9A1160FFA41015E9B49314B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				78E0B7994E0CC3BDE4351586 /* RoutineItem.swift */,
+				0A793A5327B4639E796D811B /* SampleData.swift */,
+				9A0D0B92191B0DE09B665481 /* Tymely.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE27E31CA53C3DC793F018A9 /* TymelyWidget */ = {
+			isa = PBXGroup;
+			children = (
+				DB11317E37597138B1EC98F2 /* AppIntent.swift */,
+				96A0C3FDC7AF2E0835547286 /* Info.plist */,
+				2357CE62A01DDF63D7A39208 /* TymelyWidget.swift */,
+				FACC363DA652ECB90D4C0F89 /* TymelyWidgetBundle.swift */,
+				012775F1A832B49F6E04E42D /* TymelyWidgetControl.swift */,
+				491C80B7C7692AEDD2E8F571 /* TymelyWidgetLiveActivity.swift */,
+				3EB8DD7E581401C75074DDB6 /* WidgetModels.swift */,
+			);
+			path = TymelyWidget;
+			sourceTree = "<group>";
+		};
+		CEAE70F75351ABDFBBD01D69 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		CFE1F51652B236E4B783DC58 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,11 +209,12 @@
 			buildConfigurationList = A12C9794C8CEB9427AF2CD62 /* Build configuration list for PBXNativeTarget "Tymely" */;
 			buildPhases = (
 				DB66569CEC1CECCD29370511 /* Sources */,
-				E8C71F026872910252152B08 /* Resources */,
+				68B369F262C29828F1CC180B /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B699042789650B3C7BE85A5C /* PBXTargetDependency */,
 			);
 			name = Tymely;
 			packageProductDependencies = (
@@ -175,6 +222,23 @@
 			productName = Tymely;
 			productReference = B59240B1180D97E9E65C8367 /* Tymely.app */;
 			productType = "com.apple.product-type.application";
+		};
+		723281AD0CB737837555B504 /* TymelyWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DEBD8676E8679572BC9D198 /* Build configuration list for PBXNativeTarget "TymelyWidget" */;
+			buildPhases = (
+				F1C052C0904EA1E13DDA3241 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TymelyWidget;
+			packageProductDependencies = (
+			);
+			productName = TymelyWidget;
+			productReference = 397C85C6446C5B9623A207FC /* TymelyWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -186,6 +250,9 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					569E8F9DB695209E845353A8 = {
+						DevelopmentTeam = WR5SQ3MV4C;
+					};
+					723281AD0CB737837555B504 = {
 						DevelopmentTeam = WR5SQ3MV4C;
 					};
 				};
@@ -205,46 +272,56 @@
 			projectRoot = "";
 			targets = (
 				569E8F9DB695209E845353A8 /* Tymely */,
+				723281AD0CB737837555B504 /* TymelyWidget */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		E8C71F026872910252152B08 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EF86DCB747B70A826FC59A9E /* Assets.xcassets in Resources */,
-				4682CD12DD85FB028ED9C1E5 /* project.yml in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DB66569CEC1CECCD29370511 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5ADBE72A6E20B83787A2886E /* AppColors.swift in Sources */,
-				C21968DC85BE4611E7422150 /* ContentView.swift in Sources */,
-				F9FC6FF0D9C40CFAF0E551C1 /* ContextualRoutineItemRowView.swift in Sources */,
-				61453A4D419ECA07BF45AA55 /* DailyRoutineView.swift in Sources */,
-				F8593C18BEDB9BB853497752 /* DashboardView.swift in Sources */,
-				2F551B76D13045DFB4A83C87 /* NavigationBarView.swift in Sources */,
-				623ED32563855CDBE39D17DA /* NotificationManager.swift in Sources */,
-				E05EBC449C7F0FB6906BB337 /* Persistence.swift in Sources */,
-				F85F727A875C0BDB18FBE928 /* ProfileView.swift in Sources */,
-				927E284118C972B03D397784 /* RoutineItem.swift in Sources */,
-				92EA9959EEE4A1F2A99D023D /* RoutineItemRowView.swift in Sources */,
-				608BFF6529B6A6910E464B17 /* SampleData.swift in Sources */,
-				12EBC35ED980A54BC4983F66 /* TabBarView.swift in Sources */,
-				EC0C54D94AF57637198F4709 /* Tymely.xcdatamodeld in Sources */,
-				E38C53BDDB9BF0C2552D47E4 /* TymelyApp.swift in Sources */,
+				01CCCE4745A4A0AB38BBE778 /* AppColors.swift in Sources */,
+				87625D430101D5EEA8B88E33 /* ContentView.swift in Sources */,
+				5E5F79D46498101CF652E127 /* ContextualRoutineItemRowView.swift in Sources */,
+				7C7C3E87958889465B29C8B4 /* DailyRoutineView.swift in Sources */,
+				D81CA6939FBCCFE8D1B6995E /* DashboardView.swift in Sources */,
+				74900C0357014D63736D8902 /* NavigationBarView.swift in Sources */,
+				BEB7502878242704D31724D7 /* NotificationManager.swift in Sources */,
+				69B2D120C6780EAFEB12B5C0 /* Persistence.swift in Sources */,
+				20024105E1C3675F1C6864CD /* ProfileView.swift in Sources */,
+				9F46B6A3FC4981B493F31905 /* RoutineItem.swift in Sources */,
+				8BBE4DA915271E67F54DA569 /* RoutineItemRowView.swift in Sources */,
+				C828C3D85DF439940BF0FEDD /* SampleData.swift in Sources */,
+				0A8EDEB66763654B5C935451 /* TabBarView.swift in Sources */,
+				7D4D50578DE0B036523E8F6B /* Tymely.xcdatamodeld in Sources */,
+				7E714F1B1CBDADBDEC71FBC9 /* TymelyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1C052C0904EA1E13DDA3241 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E6C07914F259426A91BFD0 /* AppIntent.swift in Sources */,
+				359B678088FF8717838F4569 /* TymelyWidget.swift in Sources */,
+				59E01F9CB1B4EEA45913AD0A /* TymelyWidgetBundle.swift in Sources */,
+				F8B88E986251FAC84CF63ABD /* TymelyWidgetControl.swift in Sources */,
+				8C87E49330849C2533C9D14A /* TymelyWidgetLiveActivity.swift in Sources */,
+				6535DD67E698712FD248C052 /* WidgetModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B699042789650B3C7BE85A5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 723281AD0CB737837555B504 /* TymelyWidget */;
+			targetProxy = 5B8E5EF017E0A16A9A8D9AC0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		073181DA8A82831CD5C4E1EA /* Release */ = {
@@ -342,6 +419,44 @@
 			};
 			name = Debug;
 		};
+		74A9D507574B21899E200B8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = WR5SQ3MV4C;
+				INFOPLIST_FILE = TymelyWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.tymely.Tymely.TymelyWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		81DA852BF45C049FD0C0B92B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = WR5SQ3MV4C;
+				INFOPLIST_FILE = TymelyWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.tymely.Tymely.TymelyWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		D3E7B340BF0E2D3EFBFA3F2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -416,6 +531,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
+		8DEBD8676E8679572BC9D198 /* Build configuration list for PBXNativeTarget "TymelyWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81DA852BF45C049FD0C0B92B /* Debug */,
+				74A9D507574B21899E200B8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		A12C9794C8CEB9427AF2CD62 /* Build configuration list for PBXNativeTarget "Tymely" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -428,12 +552,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		F058495E519374B72D5160F7 /* Tymely.xcdatamodeld */ = {
+		9A0D0B92191B0DE09B665481 /* Tymely.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				4C8D9C54DDCC7E4B6D0F6E7D /* Tymely.xcdatamodel */,
+				94272016A11A63020B1492EC /* Tymely.xcdatamodel */,
 			);
-			currentVersion = 4C8D9C54DDCC7E4B6D0F6E7D /* Tymely.xcdatamodel */;
+			currentVersion = 94272016A11A63020B1492EC /* Tymely.xcdatamodel */;
 			path = Tymely.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

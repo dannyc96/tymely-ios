@@ -1,20 +1,24 @@
 name: Tymely
 options:
   bundleIdPrefix: co.tymely
+
 targets:
   Tymely:
     type: application
     platform: iOS
     deploymentTarget: "15.0"
     sources:
-      - path: .
-        excludes:
-          - "*.xcodeproj"
-          - "*.xcworkspace"
-          - "TymelyTests/**"
-          - "TymelyUITests/**"
+      - path: Components
+      - path: Models
+      - path: Services
+      - path: Shared
+      - path: Storage
+      - path: Theme
+      - path: Utils
+      - path: Views
+      - TymelyApp.swift
     resources:
-      - Resources/**
+      - path: Resources
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: co.tymely.Tymely
@@ -28,5 +32,29 @@ targets:
       properties:
         com.apple.security.application-groups:
           - group.com.tymely.app
-    coreDataModels:
-      - Models/Tymely.xcdatamodeld 
+    dependencies:
+      - target: TymelyWidget
+        embed: true
+
+  TymelyWidget:
+    type: app-extension
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: TymelyWidget
+        excludes:
+          - "*.xcassets"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: co.tymely.Tymely.TymelyWidget
+        DEVELOPMENT_TEAM: WR5SQ3MV4C
+        INFOPLIST_FILE: TymelyWidget/Info.plist
+        TARGETED_DEVICE_FAMILY: 1,2
+        SWIFT_VERSION: 5.0
+        SKIP_INSTALL: true
+    resources:
+      - path: TymelyWidget/Assets.xcassets
+    # entitlements:
+    #   properties:
+    #     com.apple.security.application-groups:
+    #       - group.com.tymely.app

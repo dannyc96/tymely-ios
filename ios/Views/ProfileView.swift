@@ -7,6 +7,7 @@ struct ProfileView: View {
     @State private var bedTime = Calendar.current.date(from: DateComponents(hour: 22, minute: 15)) ?? Date()
     @State private var showingWakeUpPicker = false
     @State private var showingBedTimePicker = false
+    @State private var testNotificationSent = false
     
     var body: some View {
         NavigationView {
@@ -146,6 +147,49 @@ struct ProfileView: View {
                             Image(systemName: "checkmark.circle.fill")
                                 .foregroundColor(.green)
                         }
+                    }
+                    .padding(.vertical, 8)
+                    
+                    // Test Notification Button
+                    HStack {
+                        Image(systemName: "bell.badge.fill")
+                            .foregroundColor(.orange)
+                            .frame(width: 24)
+                        
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text("Test Notification")
+                                .font({
+                                    if #available(iOS 16.0, *) {
+                                        return .system(.body, weight: .medium)
+                                    } else {
+                                        return Font.body.weight(.medium)
+                                    }
+                                }())
+                            Text("Send a test notification in 5 seconds")
+                                .font(.caption)
+                                .foregroundColor(.secondary)
+                        }
+                        
+                        Spacer()
+                        
+                        Button(testNotificationSent ? "Sent!" : "Send Test") {
+                            NotificationManager.shared.sendTestNotification()
+                            testNotificationSent = true
+                            
+                            // Reset the feedback after 3 seconds
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                                testNotificationSent = false
+                            }
+                        }
+                        .font({
+                            if #available(iOS 16.0, *) {
+                                return .system(.body, weight: .medium)
+                            } else {
+                                return Font.body.weight(.medium)
+                            }
+                        }())
+                        .foregroundColor(testNotificationSent ? .green : .orange)
+                        .disabled(testNotificationSent)
                     }
                     .padding(.vertical, 8)
                     
