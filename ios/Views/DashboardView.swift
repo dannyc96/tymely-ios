@@ -74,7 +74,7 @@ struct DashboardView: View {
                         
                         // Progress details
                         HStack {
-                            Text("\(SampleData.routineItems.filter { $0.isCompleted }.count) of \(SampleData.routineItems.count) completed")
+                            Text("\(getCompletedItemsCount()) of \(SampleData.routineItems.count) completed")
                                 .font(.subheadline)
                                 .foregroundColor(.secondaryText)
                             
@@ -145,9 +145,38 @@ struct DashboardView: View {
     }
     
     private func calculateProgress() -> Int {
-        let completedCount = SampleData.routineItems.filter { $0.isCompleted }.count
+        let completedCount = getCompletedItemsCount()
         guard !SampleData.routineItems.isEmpty else { return 0 }
         return Int((Double(completedCount) / Double(SampleData.routineItems.count)) * 100)
+    }
+    
+    private func getCompletedItemsCount() -> Int {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "h:mm a"
+        let calendar = Calendar.current
+        let now = Date()
+        
+        var completedCount = 0
+        
+        for item in SampleData.routineItems {
+            if let itemTime = formatter.date(from: item.time) {
+                // Create today's version of this time
+                let todayItemTime = calendar.date(bySettingHour: calendar.component(.hour, from: itemTime),
+                                                minute: calendar.component(.minute, from: itemTime),
+                                                second: 0,
+                                                of: now) ?? itemTime
+                
+                // If this item's time is in the past, it's completed
+                if todayItemTime < now {
+                    completedCount += 1
+                } else {
+                    // Once we hit a future item, we can stop counting
+                    break
+                }
+            }
+        }
+        
+        return completedCount
     }
 }
 
