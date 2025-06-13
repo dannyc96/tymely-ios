@@ -111,6 +111,10 @@ struct DashboardView: View {
                     HStack {
                         Spacer()
                         Button(action: {
+                            // Add haptic feedback
+                            let impactFeedback = UIImpactFeedbackGenerator(style: .medium)
+                            impactFeedback.impactOccurred()
+                            
                             print("Floating Now button tapped!")
                             scrollToCurrentAction?()
                         }) {
